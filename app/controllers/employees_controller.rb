@@ -11,10 +11,10 @@ class EmployeesController < ApplicationController
 		@employee = Employee.new(params.require(:employee).permit(:name))
 		if @employee.save
 			flash[:success] = %Q|Added employee|
-			redirect_to accounts_path
+			redirect_to employees_path
 		else
 			flash[:error] = %Q|There was a problem adding employee|
-			render action: :new
+			redirect_to employees_path
 		end
 	end
 end
