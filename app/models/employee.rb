@@ -5,7 +5,7 @@ class Employee < Account
 		time_entries.sum(:time)
 	end
 
-	def log_time(amount, customer)
+	def log_time amount, customer
 		TimeEntry.create(time: amount, employee: self, account: customer)
 	end
 end
