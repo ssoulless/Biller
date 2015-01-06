@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141215235553) do
+ActiveRecord::Schema.define(version: 20141220010143) do
 
   create_table "account_entries", force: true do |t|
     t.float    "time",        limit: 24
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20141215235553) do
     t.integer  "account_id"
     t.string   "type"
     t.decimal  "amount",                 precision: 10, scale: 0
+    t.string   "state"
   end
 
   create_table "accounts", force: true do |t|
