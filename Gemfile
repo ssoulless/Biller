@@ -10,6 +10,7 @@ gem 'sass-rails', '~> 4.0.3'
 
 gem 'state_machine'
 gem 'faker'
+gem 'paper_trail'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
